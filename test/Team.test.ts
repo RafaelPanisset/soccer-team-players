@@ -4,10 +4,10 @@ import { Player } from '../src/Player';
 describe('Team', () => {
   it('should add players to the team', () => {
     // Arrange
-    const team = new Team('Barcelona');
-    const player1 = new Player('Messi', team);
-    const player2 = new Player('Xavi', team);
-    const player3 = new Player('Iniesta', team);
+    const team = new Team('Flamengo');
+    const player1 = new Player('Arrascaeta', team);
+    const player2 = new Player('Gerson', team);
+    const player3 = new Player('Ayrton Lucas', team);
 
     // Act
     const players = team.getPlayers();
