@@ -4,9 +4,9 @@ import { Player } from '../src/Player';
 describe('Player', () => {
   it('should associate players with the team', () => {
     // Arrange
-    const team = new Team('Barcelona');
-    const player1 = new Player('Messi', team);
-    const player2 = new Player('Xavi', team);
+    const team = new Team('Flamengo');
+    const player1 = new Player('Pedro', team);
+    const player2 = new Player('Gabriel', team);
 
     // Act
     const teamOfPlayer1 = player1.getTeam();
@@ -19,13 +19,13 @@ describe('Player', () => {
 
   it('should return the name of the player', () => {
     // Arrange
-    const team = new Team('Barcelona');
-    const player = new Player('Messi', team);
+    const team = new Team('Flamengo');
+    const player = new Player('Gabriel', team);
 
     // Act
     const playerName = player.getName();
 
     // Assert
-    expect(playerName).toBe('Messi');
+    expect(playerName).toBe('Gabriel');
   });
 });
